@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>J6M Expense Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>J6M Expense Tracker</h1>
+
+  <form id="expenseForm">
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" required>
+
+    <label for="itemQuantity">Quantity:</label>
+    <input type="number" id="itemQuantity" required>
+
+    <label for="itemPrice">Price per Unit:</label>
+    <input type="number" id="itemPrice" required>
+
+    <button type="submit">Add Expense</button>
+  </form>
+  <br>
+  <h4 id="grand_total"></h4>
+  <div id="expenseList"></div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
