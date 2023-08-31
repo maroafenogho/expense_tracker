@@ -4,7 +4,6 @@ import itemsList from "./items.js";
 const expenseForm = document.getElementById('expenseForm');
 const expenseList = document.getElementById('expenseList');
 const grandTotal = document.getElementById('grand_total');
-// const expenseTable = document.getElementById('expenseTable').getElementsByTagName('tbody')[0];
 
 console.log(itemsList)
 const getItems = ()=>{
@@ -31,24 +30,7 @@ let overall = 0;
  }
 
  grandTotal.innerHTML = `Grand total: N${overall.toFixed(2)}`
-
-  // Add the card to the expense list
   expenseList.appendChild(card);
-
-    // const newRow = expenseTable.insertRow();
-
-    // // Insert cells into the new row
-    // const nameCell = newRow.insertCell(0);
-    // const quantityCell = newRow.insertCell(1);
-    // const priceCell = newRow.insertCell(2);
-    // const totalCell = newRow.insertCell(3);
-
-    // itemsList.forEach((item)=>{
-    //     nameCell.textContent = item.itemName
-    //     quantityCell.textContent = item.itemQuantity
-    //   priceCell.textContent = item.itemPrice.toFixed(2)
-    //   totalCell.textContent = item.totalCost.toFixed(2)
-    // })
 }
 // Event listener for the form submission
 
@@ -65,32 +47,6 @@ expenseForm.addEventListener('submit', function(event) {
 
 
 getItems()
-//   console.log(itemsList)
-  // Calculate total cost
-//   const totalCost = itemQuantity * itemPrice;
-
-  // Create a new row in the table
-//   const newRow = expenseTable.insertRow();
-
-//   // Insert cells into the new row
-//   const nameCell = newRow.insertCell(0);
-//   const quantityCell = newRow.insertCell(1);
-//   const priceCell = newRow.insertCell(2);
-//   const totalCell = newRow.insertCell(3);
-
-// itemsList.forEach((item)=>{
-//     nameCell.textContent = item.itemName
-//     quantityCell.textContent = item.itemQuantity
-//   priceCell.textContent = item.itemPrice.toFixed(2)
-//   totalCell.textContent = item.totalCost.toFixed(2)
-// })
-  // Set the cell values
-//   nameCell.textContent = itemName;
-//   quantityCell.textContent = itemQuantity;
-//   priceCell.textContent = itemPrice.toFixed(2);
-//   totalCell.textContent = totalCost.toFixed(2);
-
-  // Clear the form inputs
   expenseForm.reset();
 });
 
